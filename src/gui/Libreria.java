@@ -19,10 +19,13 @@ public class Libreria extends javax.swing.JFrame {
     int compras = 0, alquileres = 0, total = 0;
     public Libreria() {
         initComponents();
+        
         TextPrompt descp = new TextPrompt("Nombre del libro", jTextField1);
         jTextField2.setText(String.valueOf(total));
         jTextField4.setText(String.valueOf(compras));
         jTextField5.setText(String.valueOf(alquileres));
+        setLocationRelativeTo(null);
+        setSize(550, 400);
     }
 
     /**
